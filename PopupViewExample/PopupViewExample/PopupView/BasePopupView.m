@@ -2,20 +2,20 @@
 //  BasePopupView.m
 //  PopupViewExample
 //
-//  Created by Vols on 2016/11/1.
-//  Copyright © 2016年 hibor. All rights reserved.
+//  Created by Vols on 2015/11/1.
+//  Copyright © 2015年 hibor. All rights reserved.
 //
 
 #import "BasePopupView.h"
 #import "Masonry.h"
 
+#define kAnimationDuration  0.3
 @interface BasePopupView ()
 
 @property (nonatomic, strong) UIView    * container;
 @property (nonatomic, strong) UIView    * overlayView;
 
 @end
-
 
 @implementation BasePopupView
 
@@ -27,7 +27,6 @@
     return self;
 }
 
-
 - (void)displayBasePopupUI{
     
     [self.container addSubview:self.overlayView];
@@ -37,7 +36,6 @@
         make.edges.equalTo(self.container);
     }];
 }
-
 
 #pragma mark - actions Methods
 
@@ -55,9 +53,21 @@
     
     [self setNeedsLayout];
     
-    if (block) {
-        block(self, YES);
-    }
+    self.layer.transform = CATransform3DMakeScale(1.2f, 1.2f, 1.0f);
+    self.alpha = 0.0f;
+    
+    [UIView animateWithDuration:kAnimationDuration
+                          delay:0.0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         
+                         self.layer.transform = CATransform3DIdentity;
+                         self.alpha = 1.0f;
+                         
+                     } completion:^(BOOL finished) {
+                         if (block) {
+                             block(self, finished);
+                         }
+                     }];
 }
 
 
@@ -68,12 +78,25 @@
 - (void)hideWithCompletion:(PopupCompletionBlock)block{
     [self endEditing:YES];
     
-    [self.container removeFromSuperview];
-    
-    if (block) {
-        block(self, YES);
-    }
+    [UIView animateWithDuration:kAnimationDuration
+                          delay:0
+                        options: UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         self.alpha = 0.0f;
+                     }
+                     completion:^(BOOL finished) {
+                         
+                         if ( finished ) {
+                             [self removeFromSuperview];
+                             [self.container removeFromSuperview];
+                         }
+                         
+                         if (block) {
+                             block(self, YES);
+                         }
+                     }];
 }
+
 
 - (void)tapAction:(UITapGestureRecognizer *)recognizer {
     [self hide];
