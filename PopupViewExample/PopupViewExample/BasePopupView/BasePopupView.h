@@ -13,10 +13,12 @@
 typedef void(^PopupBlock)(BasePopupView *);
 typedef void(^PopupCompletionBlock)(BasePopupView *, BOOL);
 
+/*
+ *  BasePopupView，处理与具体视图不相关的操作，比如弹出消失动画。只需要继承后关注自身的元素。
+ */
 @interface BasePopupView : UIView
 
-@property (nonatomic, strong) UIView         *attachedView;
-
+@property (nonatomic, strong) UIView    *attachedView;
 
 - (void) show;
 - (void) showWithCompletion:(PopupCompletionBlock)block;

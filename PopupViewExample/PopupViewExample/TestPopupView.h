@@ -8,6 +8,9 @@
 
 #import "BasePopupView.h"
 
+/*
+ *  继承自BasePopupView，只需要关注自身的视图元素。
+ */
 @interface TestPopupView : BasePopupView
 
 @end

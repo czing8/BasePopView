@@ -62,7 +62,8 @@
                          
                          self.layer.transform = CATransform3DIdentity;
                          self.alpha = 1.0f;
-                         
+                         self.overlayView.alpha = 0.6f;
+
                      } completion:^(BOOL finished) {
                          if (block) {
                              block(self, finished);
@@ -83,6 +84,7 @@
                         options: UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState
                      animations:^{
                          self.alpha = 0.0f;
+                         self.overlayView.alpha = 0.2f;
                      }
                      completion:^(BOOL finished) {
                          
@@ -128,7 +130,7 @@
     
     if (!_overlayView) {
         _overlayView = [[UIView alloc] init];
-        _overlayView.alpha = 0.6;
+        _overlayView.alpha = 0.1;
         _overlayView.backgroundColor = [UIColor blackColor];
         
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
