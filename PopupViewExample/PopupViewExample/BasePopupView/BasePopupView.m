@@ -10,24 +10,29 @@
 #import "Masonry.h"
 
 #define kAnimationDuration  0.3
+
 @interface BasePopupView ()
 
-@property (nonatomic, strong) UIView    * container;
-@property (nonatomic, strong) UIView    * overlayView;
+@property (nonatomic, strong) UIView    * container;    //Pop的最底层容器
+@property (nonatomic, strong) UIView    * overlayView;  //遮罩层
 
 @end
 
 @implementation BasePopupView
 
+#pragma mark - 初始化
+
 - (id)init{
     self = [super init];
     if (self) {
+        _isHideOverLay = NO;    //默认显示遮罩层
+        _attachedView = [UIApplication sharedApplication].keyWindow;    //默认显示到UIWindow
         [self displayBasePopupUI];
     }
     return self;
 }
 
-- (void)displayBasePopupUI{
+- (void)displayBasePopupUI {
     
     [self.container addSubview:self.overlayView];
     [self.container addSubview:self];
@@ -37,14 +42,15 @@
     }];
 }
 
-#pragma mark - actions Methods
+#pragma mark - Public
 
-- (void) show {
+
+- (void)show {
     [self showWithCompletion:nil];
 }
 
-- (void)showWithCompletion:(PopupCompletionBlock)block{
-    self.attachedView = [UIApplication sharedApplication].keyWindow;
+- (void)showWithCompletion:(PopupCompletionBlock)block {
+    self.showCompleteHandler = block;
     [self.attachedView addSubview:self.container];
     
     [_container mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -53,54 +59,83 @@
     
     [self setNeedsLayout];
     
+    [self showAnimation];
+}
+
+
+- (void)hide {
+    [self hideWithCompletion:nil];
+}
+
+- (void)hideWithCompletion:(PopupCompletionBlock)block {
+    [self endEditing:YES];
+    
+    self.hideCompleteHandler = block;
+    [self hideAnimation];
+}
+
+
+- (void)showAnimation {
+
     self.layer.transform = CATransform3DMakeScale(1.2f, 1.2f, 1.0f);
     self.alpha = 0.0f;
-    
+
     [UIView animateWithDuration:kAnimationDuration
                           delay:0.0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState
                      animations:^{
                          
                          self.layer.transform = CATransform3DIdentity;
                          self.alpha = 1.0f;
-                         self.overlayView.alpha = 0.6f;
-
+                         if (!_isHideOverLay) self.overlayView.alpha = 0.3f;
+                         
                      } completion:^(BOOL finished) {
-                         if (block) {
-                             block(self, finished);
+                         if (self.showCompleteHandler) {
+                             self.showCompleteHandler(self, finished);
                          }
                      }];
 }
 
 
-- (void)hide{
-    [self hideWithCompletion:nil];
-}
-
-- (void)hideWithCompletion:(PopupCompletionBlock)block{
-    [self endEditing:YES];
-    
-    [UIView animateWithDuration:kAnimationDuration
+- (void)hideAnimation {
+    [UIView animateWithDuration:0.3
                           delay:0
                         options: UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState
                      animations:^{
-                         self.alpha = 0.0f;
-                         self.overlayView.alpha = 0.2f;
+//                         self.alpha = 0.0f;
+                         self.container.alpha = 0.1f;
+                         self.layer.transform = CATransform3DMakeScale(1.1f, 1.1f, 1.0f);
                      }
                      completion:^(BOOL finished) {
                          
-                         if ( finished ) {
+                         if (finished) {
                              [self removeFromSuperview];
                              [self.container removeFromSuperview];
                          }
                          
-                         if (block) {
-                             block(self, YES);
+                         if (self.hideCompleteHandler) {
+                             self.hideCompleteHandler(self, finished);
                          }
                      }];
 }
 
+#pragma mark - Setter
+
+- (void)setIsHideOverLay:(BOOL)isHideOverLay {
+    _isHideOverLay = isHideOverLay;
+    
+    if (_isHideOverLay) {
+        _overlayView.backgroundColor = [UIColor clearColor];
+    }
+}
+
+
+
+
+
+#pragma mark - Actions Methods
 
 - (void)tapAction:(UITapGestureRecognizer *)recognizer {
+    
     [self hide];
 }
 

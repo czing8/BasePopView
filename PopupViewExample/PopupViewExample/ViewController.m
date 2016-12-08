@@ -10,6 +10,10 @@
 #import "TestPopupView.h"
 #import "PopView.h"
 
+#import "BottleView.h"
+#import "VCityPicker.h"
+#import "V2CityPicker.h"
+
 @interface ViewController ()
 @property (nonatomic, strong) PopView * popView;
 
@@ -32,7 +36,43 @@
     [self.view addSubview:self.popView];
     
     [_popView showPopView];
+}
 
+- (IBAction)clickAction2:(id)sender {
+
+    BottleView * bottleView = [[BottleView alloc] init];
+    
+    __weak __typeof(bottleView)weakBottleView = bottleView;
+    
+    weakBottleView.throwBottleClick = ^(NSString * bottleText){
+        NSLog(@"bottleText--> %@", bottleText);
+    };
+    
+    weakBottleView.myBottlesClick = ^{
+        NSLog(@"%s", __FUNCTION__);
+    };
+    
+    [bottleView showView];
+}
+
+- (IBAction)city1PickerAction:(id)sender {
+    V2CityPicker * cityPicker = [[V2CityPicker alloc] init];
+    cityPicker.selectedHandler = ^(NSString *cityString){
+        [sender setTitle:cityString forState:UIControlStateNormal];
+    };
+    
+    [cityPicker show];
+}
+
+
+- (IBAction)cityPickerAction:(UIButton *)sender {
+    VCityPicker * cityPicker = [[VCityPicker alloc] init];
+    cityPicker.selectedHandler = ^(VCityModel *model){
+        NSLog(@"%@", model.county);
+        [sender setTitle:model.county forState:UIControlStateNormal];
+    };
+    
+    [cityPicker show];
 }
 
 

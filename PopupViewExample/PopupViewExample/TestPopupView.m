@@ -23,6 +23,8 @@
 
 - (void)displayUI{
     
+//    self.isHideOverLay = YES;
+    
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.superview).with.insets(UIEdgeInsetsMake(100, 50, 100, 50));
     }];

@@ -21,6 +21,14 @@
 		F13ED4F51DDBF79C00F8DFF3 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4E91DDBF79C00F8DFF3 /* View+MASAdditions.m */; };
 		F13ED4F61DDBF79C00F8DFF3 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4EC1DDBF79C00F8DFF3 /* ViewController+MASAdditions.m */; };
 		F13ED4FA1DDBF96400F8DFF3 /* BasePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4F91DDBF96400F8DFF3 /* BasePopupView.m */; };
+		F14824441DEED4AF000A5FC6 /* VCityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F14824431DEED4AF000A5FC6 /* VCityPicker.m */; };
+		F1489A8E1DE03829000AD269 /* BottleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1489A8C1DE03829000AD269 /* BottleView.m */; };
+		F154ECF51DF9370800EB4FAD /* VCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F154ECF21DF9370800EB4FAD /* VCityModel.m */; };
+		F154ECF81DF9383D00EB4FAD /* areas.json in Resources */ = {isa = PBXBuildFile; fileRef = F154ECF71DF9383D00EB4FAD /* areas.json */; };
+		F154ED051DF94B8F00EB4FAD /* VCityToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F154ED041DF94B8F00EB4FAD /* VCityToolBar.m */; };
+		F154ED081DF94BFE00EB4FAD /* V2CityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F154ED071DF94BFE00EB4FAD /* V2CityPicker.m */; };
+		F154ED0A1DF94F4100EB4FAD /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = F154ED091DF94F4100EB4FAD /* cities.plist */; };
+		F154ED0D1DF94F5B00EB4FAD /* VProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F154ED0C1DF94F5B00EB4FAD /* VProvinceModel.m */; };
 		F186908F1DC877D10024BF3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F186908E1DC877D10024BF3A /* main.m */; };
 		F18690921DC877D10024BF3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F18690911DC877D10024BF3A /* AppDelegate.m */; };
 		F18690951DC877D10024BF3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18690941DC877D10024BF3A /* ViewController.m */; };
@@ -63,6 +71,21 @@
 		F13ED4EC1DDBF79C00F8DFF3 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		F13ED4F81DDBF96400F8DFF3 /* BasePopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePopupView.h; sourceTree = "<group>"; };
 		F13ED4F91DDBF96400F8DFF3 /* BasePopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePopupView.m; sourceTree = "<group>"; };
+		F14824421DEED4AF000A5FC6 /* VCityPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCityPicker.h; sourceTree = "<group>"; };
+		F14824431DEED4AF000A5FC6 /* VCityPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCityPicker.m; sourceTree = "<group>"; };
+		F1489A8C1DE03829000AD269 /* BottleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottleView.m; sourceTree = "<group>"; };
+		F1489A8D1DE03829000AD269 /* BottleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottleView.h; sourceTree = "<group>"; };
+		F154ECF11DF9370800EB4FAD /* VCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCityModel.h; sourceTree = "<group>"; };
+		F154ECF21DF9370800EB4FAD /* VCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCityModel.m; sourceTree = "<group>"; };
+		F154ECF71DF9383D00EB4FAD /* areas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = areas.json; sourceTree = "<group>"; };
+		F154ECF91DF93DC800EB4FAD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F154ED031DF94B8F00EB4FAD /* VCityToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCityToolBar.h; sourceTree = "<group>"; };
+		F154ED041DF94B8F00EB4FAD /* VCityToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCityToolBar.m; sourceTree = "<group>"; };
+		F154ED061DF94BFE00EB4FAD /* V2CityPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2CityPicker.h; sourceTree = "<group>"; };
+		F154ED071DF94BFE00EB4FAD /* V2CityPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2CityPicker.m; sourceTree = "<group>"; };
+		F154ED091DF94F4100EB4FAD /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		F154ED0B1DF94F5B00EB4FAD /* VProvinceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VProvinceModel.h; sourceTree = "<group>"; };
+		F154ED0C1DF94F5B00EB4FAD /* VProvinceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VProvinceModel.m; sourceTree = "<group>"; };
 		F186908A1DC877D10024BF3A /* PopupViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F186908E1DC877D10024BF3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F18690901DC877D10024BF3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +176,34 @@
 			path = BasePopupView;
 			sourceTree = "<group>";
 		};
+		F14824411DEED49B000A5FC6 /* CityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F154ECF71DF9383D00EB4FAD /* areas.json */,
+				F154ED091DF94F4100EB4FAD /* cities.plist */,
+				F154ECF11DF9370800EB4FAD /* VCityModel.h */,
+				F154ECF21DF9370800EB4FAD /* VCityModel.m */,
+				F14824421DEED4AF000A5FC6 /* VCityPicker.h */,
+				F14824431DEED4AF000A5FC6 /* VCityPicker.m */,
+				F154ED031DF94B8F00EB4FAD /* VCityToolBar.h */,
+				F154ED041DF94B8F00EB4FAD /* VCityToolBar.m */,
+				F154ED0B1DF94F5B00EB4FAD /* VProvinceModel.h */,
+				F154ED0C1DF94F5B00EB4FAD /* VProvinceModel.m */,
+				F154ED061DF94BFE00EB4FAD /* V2CityPicker.h */,
+				F154ED071DF94BFE00EB4FAD /* V2CityPicker.m */,
+			);
+			path = CityPicker;
+			sourceTree = "<group>";
+		};
+		F1489A8B1DE03823000AD269 /* BottleView */ = {
+			isa = PBXGroup;
+			children = (
+				F1489A8C1DE03829000AD269 /* BottleView.m */,
+				F1489A8D1DE03829000AD269 /* BottleView.h */,
+			);
+			path = BottleView;
+			sourceTree = "<group>";
+		};
 		F18690811DC877D10024BF3A = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +223,6 @@
 		F186908C1DC877D10024BF3A /* PopupViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				F13ED4F71DDBF96400F8DFF3 /* BasePopupView */,
-				F13ED4CA1DDBF67600F8DFF3 /* PopAnimationView */,
 				F18690901DC877D10024BF3A /* AppDelegate.h */,
 				F18690911DC877D10024BF3A /* AppDelegate.m */,
 				F18690931DC877D10024BF3A /* ViewController.h */,
@@ -181,6 +230,10 @@
 				F13ED4C71DDBF52000F8DFF3 /* TestPopupView.h */,
 				F13ED4C81DDBF52000F8DFF3 /* TestPopupView.m */,
 				F18690961DC877D10024BF3A /* Main.storyboard */,
+				F14824411DEED49B000A5FC6 /* CityPicker */,
+				F1489A8B1DE03823000AD269 /* BottleView */,
+				F13ED4F71DDBF96400F8DFF3 /* BasePopupView */,
+				F13ED4CA1DDBF67600F8DFF3 /* PopAnimationView */,
 				F13ED4CD1DDBF67600F8DFF3 /* UIImage-ResizeMagick */,
 				F13ED4D21DDBF79C00F8DFF3 /* 3rds */,
 				F18690991DC877D10024BF3A /* Assets.xcassets */,
@@ -195,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				F186908E1DC877D10024BF3A /* main.m */,
+				F154ECF91DF93DC800EB4FAD /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,6 +313,8 @@
 			files = (
 				F186909D1DC877D10024BF3A /* LaunchScreen.storyboard in Resources */,
 				F186909A1DC877D10024BF3A /* Assets.xcassets in Resources */,
+				F154ECF81DF9383D00EB4FAD /* areas.json in Resources */,
+				F154ED0A1DF94F4100EB4FAD /* cities.plist in Resources */,
 				F18690981DC877D10024BF3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,13 +327,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F13ED4F31DDBF79C00F8DFF3 /* NSArray+MASAdditions.m in Sources */,
+				F154ED051DF94B8F00EB4FAD /* VCityToolBar.m in Sources */,
+				F14824441DEED4AF000A5FC6 /* VCityPicker.m in Sources */,
+				F154ED0D1DF94F5B00EB4FAD /* VProvinceModel.m in Sources */,
 				F13ED4F21DDBF79C00F8DFF3 /* MASViewConstraint.m in Sources */,
+				F154ECF51DF9370800EB4FAD /* VCityModel.m in Sources */,
 				F13ED4EF1DDBF79C00F8DFF3 /* MASConstraintMaker.m in Sources */,
 				F13ED4F51DDBF79C00F8DFF3 /* View+MASAdditions.m in Sources */,
 				F18690951DC877D10024BF3A /* ViewController.m in Sources */,
 				F13ED4EE1DDBF79C00F8DFF3 /* MASConstraint.m in Sources */,
+				F1489A8E1DE03829000AD269 /* BottleView.m in Sources */,
 				F18690921DC877D10024BF3A /* AppDelegate.m in Sources */,
 				F13ED4F11DDBF79C00F8DFF3 /* MASViewAttribute.m in Sources */,
+				F154ED081DF94BFE00EB4FAD /* V2CityPicker.m in Sources */,
 				F13ED4FA1DDBF96400F8DFF3 /* BasePopupView.m in Sources */,
 				F13ED4F41DDBF79C00F8DFF3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				F13ED4C91DDBF52000F8DFF3 /* TestPopupView.m in Sources */,
@@ -405,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = PopupViewExample/PrefixHeader.pch;
 				INFOPLIST_FILE = PopupViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vols.PopupViewExample;
@@ -417,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = PopupViewExample/PrefixHeader.pch;
 				INFOPLIST_FILE = PopupViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vols.PopupViewExample;

@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  PopupViewExample
+//
+//  Created by Vols on 2015/12/8.
+//  Copyright © 2015年 vols. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kRGBHex(rgbValue)   [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#import "Masonry.h"
+
+#endif /* PrefixHeader_pch */
