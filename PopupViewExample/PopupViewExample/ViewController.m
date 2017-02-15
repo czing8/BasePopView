@@ -17,6 +17,8 @@
 @interface ViewController ()
 @property (nonatomic, strong) PopView * popView;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *sgType;
+
 @end
 
 @implementation ViewController
@@ -24,11 +26,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    _sgType.selectedSegmentIndex = 0;
+    [self typeChange:nil];
+}
+
+
+- (IBAction)typeChange:(id)sender {
+    
 }
 
 - (IBAction)clickAction:(id)sender {
     
     TestPopupView * popView = [[TestPopupView alloc] init];
+    popView.animationType = _sgType.selectedSegmentIndex + 1;
     [popView show];
 }
 
@@ -66,11 +76,10 @@
 
 
 - (IBAction)cityPickerAction:(UIButton *)sender {
-    VCityPicker * cityPicker = [[VCityPicker alloc] init];
-    cityPicker.selectedHandler = ^(VCityModel *model){
+    VCityPicker * cityPicker = [VCityPicker pickerWithResultHandler:^(VCityModel *model) {
         NSLog(@"%@", model.county);
         [sender setTitle:model.county forState:UIControlStateNormal];
-    };
+    }];
     
     [cityPicker show];
 }

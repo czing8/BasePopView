@@ -27,6 +27,15 @@
 
 @implementation VCityPicker
 
++ (VCityPicker *)pickerWithResultHandler:(void(^)(VCityModel *model))handler {
+
+    VCityPicker * picker = [[VCityPicker alloc] init];
+    picker.animationType = PopTransitionStyleSheet;
+    picker.backgroundColor = [UIColor purpleColor];
+
+    return picker;
+}
+
 - (id)init {
     if (self = [super init]) {
         [self initData];
@@ -46,7 +55,6 @@
 }
 
 - (void)configureViews {
-    self.backgroundColor = [UIColor purpleColor];
     [self addSubview:self.toolBar];
     [self addSubview:self.pickerView];
 

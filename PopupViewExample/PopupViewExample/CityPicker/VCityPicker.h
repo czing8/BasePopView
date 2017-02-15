@@ -13,4 +13,6 @@
 
 @property (nonatomic, copy) void(^selectedHandler)(VCityModel *model);
 
++ (VCityPicker *)pickerWithResultHandler:(void(^)(VCityModel *model))handler;
+
 @end
