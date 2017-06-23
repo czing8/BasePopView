@@ -8,14 +8,17 @@
 
 #import "ViewController.h"
 #import "TestPopupView.h"
-#import "PopView.h"
 
-#import "BottleView.h"
+#import "VVDropMenu.h"
+#import "VVWarnPopupView.h"
+#import "VVImagePopupView.h"
+#import "VVRefreshPopView.h"
+
 #import "VCityPicker.h"
 #import "V2CityPicker.h"
 
 @interface ViewController ()
-@property (nonatomic, strong) PopView * popView;
+
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *sgType;
 
@@ -37,33 +40,44 @@
 
 - (IBAction)clickAction:(id)sender {
     
-    TestPopupView * popView = [[TestPopupView alloc] init];
-    popView.animationType = _sgType.selectedSegmentIndex + 1;
-    [popView show];
+    [TestPopupView showWithSettings:^(TestPopupView *popupView) {
+        popupView.animationType = _sgType.selectedSegmentIndex + 1;
+    }];
+    
 }
 
 - (IBAction)popClickAction:(id)sender {
-    [self.view addSubview:self.popView];
+
     
-    [_popView showPopView];
+    [VVImagePopupView showWithImage:@"finish" otherSettings:^(VVImagePopupView *popupView) {
+        
+    }];
 }
 
 - (IBAction)clickAction2:(id)sender {
 
-    BottleView * bottleView = [[BottleView alloc] init];
+    [VVWarnPopupView showWithSettings:^(VVWarnPopupView *dropMenu) {
+        
+    }];
     
-    __weak __typeof(bottleView)weakBottleView = bottleView;
-    
-    weakBottleView.throwBottleClick = ^(NSString * bottleText){
-        NSLog(@"bottleText--> %@", bottleText);
-    };
-    
-    weakBottleView.myBottlesClick = ^{
-        NSLog(@"%s", __FUNCTION__);
-    };
-    
-    [bottleView showView];
 }
+
+- (IBAction)dropMenuAction:(id)sender {
+//    [VVDropMenu showWithMenuTitles:@[@"1", @"1", @"1", @"2", @"3"] otherSettings:^(VVDropMenu *dropMenu) {
+//        
+//    }];
+    
+   VVRefreshPopView * refreshMenu =  [VVRefreshPopView showWithSettings:^(VVRefreshPopView *popupView) {
+        popupView.animationType = 1;
+
+    }];
+
+    refreshMenu.clickHandler = ^(NSUInteger selectedIndex) {
+        NSLog(@"%ld", selectedIndex);
+    };
+}
+
+
 
 - (IBAction)city1PickerAction:(id)sender {
     V2CityPicker * cityPicker = [[V2CityPicker alloc] init];
@@ -86,14 +100,6 @@
 
 
 #pragma mark - properties
-- (PopView *)popView{
-    if (!_popView) {
-        _popView = [[PopView alloc] init];
-        _popView.image = [UIImage imageNamed:@"finish"];
-    }
-    return _popView;
-}
-
 
 
 - (void)didReceiveMemoryWarning {

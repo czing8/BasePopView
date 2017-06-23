@@ -13,4 +13,7 @@
  */
 @interface TestPopupView : BasePopupView
 
++ (TestPopupView *)showWithSettings:(void (^) (TestPopupView * popupView))otherSetting;
+
+
 @end

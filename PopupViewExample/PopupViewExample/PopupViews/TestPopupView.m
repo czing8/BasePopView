@@ -11,17 +11,29 @@
 
 @implementation TestPopupView
 
+#pragma mark - Public
+
++ (TestPopupView *)showWithSettings:(void (^) (TestPopupView * popupView))otherSetting {
+    TestPopupView *popupMenu = [[TestPopupView alloc] init];
+    if (otherSetting)  otherSetting(popupMenu);
+    [popupMenu show];
+
+    return popupMenu;
+}
+
+#pragma mark - Lifecycle
+
 - (id)init{
     self = [super init];
     if (self) {
         
-        [self displayUI];
+        [self configureViews];
     }
     return self;
 }
 
 
-- (void)displayUI{
+- (void)configureViews{
     
 //    self.isHideOverLay = YES;
     
@@ -32,5 +44,8 @@
 
     self.backgroundColor = [UIColor purpleColor];
 }
+
+
+
 
 @end

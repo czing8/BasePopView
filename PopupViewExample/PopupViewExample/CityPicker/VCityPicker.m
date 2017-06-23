@@ -61,10 +61,10 @@
     __weak typeof(self) weakself = self;
     
     _toolBar.cancelHandler = ^(){
-        [weakself hide];
+        [weakself dismiss];
     };
     _toolBar.okHandler = ^(){
-        [weakself hide];
+        [weakself dismiss];
         
         VCityModel *model = [VCityModel new];
         model.province = weakself.provinceArr[[weakself.pickerView selectedRowInComponent:0]];

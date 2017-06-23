@@ -42,10 +42,10 @@
     __weak typeof(self) weakself = self;
     
     _toolBar.cancelHandler = ^(){
-        [weakself hide];
+        [weakself dismiss];
     };
     _toolBar.okHandler = ^(){
-        [weakself hide];
+        [weakself dismiss];
         if (weakself.selectedHandler)   weakself.selectedHandler(weakself.theResult);
     };
     

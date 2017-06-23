@@ -70,15 +70,15 @@
 }
 
 
-- (void)hide {
-    [self hideWithCompletion:nil];
+- (void)dismiss {
+    [self dismissWithCompletion:nil];
 }
 
-- (void)hideWithCompletion:(PopupCompletionBlock)block {
+- (void)dismissWithCompletion:(PopupCompletionBlock)block {
     [self endEditing:YES];
     
-    self.hideCompleteHandler = block;
-    [self hideAnimation];
+    self.dismissCompleteHandler = block;
+    [self dismissAnimation];
 }
 
 
@@ -192,7 +192,7 @@
 }
 
 
-- (void)hideAnimation {
+- (void)dismissAnimation {
     
     [UIView animateWithDuration:kDefaultDuration animations:^{
         switch (_animationType) {
@@ -254,7 +254,7 @@
                 [self removeFromSuperview];
                 [self.container removeFromSuperview];
             }
-            if (self.hideCompleteHandler)  self.hideCompleteHandler(self, finished);
+            if (self.dismissCompleteHandler)  self.dismissCompleteHandler(self, finished);
         }];
     }];
 }
@@ -287,7 +287,7 @@
 
 - (void)tapAction:(UITapGestureRecognizer *)recognizer {
     
-    [self hide];
+    [self dismiss];
 }
 
 //代码方式适配横竖屏，

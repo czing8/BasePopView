@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,12 +44,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfA-xE-gRt">
-                                <rect key="frame" x="148" y="199" width="80" height="30"/>
+                                <rect key="frame" x="148" y="268.5" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Fp7-1y-VZu"/>
                                     <constraint firstAttribute="height" constant="30" id="QAa-AF-TDv"/>
                                 </constraints>
-                                <state key="normal" title="弹出"/>
+                                <state key="normal" title="顶部弹出"/>
                                 <connections>
                                     <action selector="clickAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSn-vL-Dio"/>
                                 </connections>
@@ -92,13 +92,26 @@
                                     <action selector="typeChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="85D-xl-qha"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ly-bf-j1b">
+                                <rect key="frame" x="13" y="268.5" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vSg-Uh-41N"/>
+                                    <constraint firstAttribute="width" constant="95" id="yQG-1g-BS6"/>
+                                </constraints>
+                                <state key="normal" title="dropMenu"/>
+                                <connections>
+                                    <action selector="dropMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRp-n0-h8R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1ly-bf-j1b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="7By-NA-yTU"/>
                             <constraint firstItem="Onm-kk-Fjm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8wx-Dw-1Wc"/>
+                            <constraint firstItem="1ly-bf-j1b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="13" id="9F3-oe-Reb"/>
                             <constraint firstItem="Onm-kk-Fjm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="Ave-4U-DA6"/>
                             <constraint firstItem="uCH-ui-duu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C7p-2V-jva"/>
-                            <constraint firstItem="hfA-xE-gRt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120" id="ITn-Tg-zQN"/>
+                            <constraint firstItem="hfA-xE-gRt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="ITn-Tg-zQN"/>
                             <constraint firstItem="Tnb-zQ-BAM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QIs-zq-fpG"/>
                             <constraint firstItem="SzP-9U-v7W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tkr-V1-k6y"/>
                             <constraint firstItem="Tnb-zQ-BAM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="ZT0-MA-4b0"/>
@@ -113,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="119"/>
+            <point key="canvasLocation" x="36" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>

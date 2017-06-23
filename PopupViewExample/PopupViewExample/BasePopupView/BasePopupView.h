@@ -39,21 +39,21 @@ typedef void(^PopupCompletionBlock)(BasePopupView *, BOOL);
 @property (nonatomic, assign) BOOL      isHideWhenTouchOverLay;     // 点击遮罩层隐藏
 @property (nonatomic, assign) PopAnimationType      animationType;  // 出现消失动画类型
 @property (nonatomic,   copy) PopupCompletionBlock  showCompleteHandler;
-@property (nonatomic,   copy) PopupCompletionBlock  hideCompleteHandler;
+@property (nonatomic,   copy) PopupCompletionBlock  dismissCompleteHandler;
 
 
 - (void) show;
 - (void) showWithCompletion:(PopupCompletionBlock)block;
 
 
-- (void) hide;
-- (void) hideWithCompletion:(PopupCompletionBlock)block;
+- (void) dismiss;
+- (void) dismissWithCompletion:(PopupCompletionBlock)block;
 
 
 /*
  *  子类中可重写动画，会覆盖掉BasePopupView动画
  */
 - (void)showAnimation;
-- (void)hideAnimation;
+- (void)dismissAnimation;
 
 @end

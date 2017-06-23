@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F13ED4C91DDBF52000F8DFF3 /* TestPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4C81DDBF52000F8DFF3 /* TestPopupView.m */; };
-		F13ED4D01DDBF67600F8DFF3 /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4CC1DDBF67600F8DFF3 /* PopView.m */; };
 		F13ED4D11DDBF67600F8DFF3 /* UIImage+ResizeMagick.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4CF1DDBF67600F8DFF3 /* UIImage+ResizeMagick.m */; };
 		F13ED4ED1DDBF79C00F8DFF3 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4D51DDBF79C00F8DFF3 /* MASCompositeConstraint.m */; };
 		F13ED4EE1DDBF79C00F8DFF3 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4D81DDBF79C00F8DFF3 /* MASConstraint.m */; };
@@ -22,7 +20,6 @@
 		F13ED4F61DDBF79C00F8DFF3 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4EC1DDBF79C00F8DFF3 /* ViewController+MASAdditions.m */; };
 		F13ED4FA1DDBF96400F8DFF3 /* BasePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F13ED4F91DDBF96400F8DFF3 /* BasePopupView.m */; };
 		F14824441DEED4AF000A5FC6 /* VCityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F14824431DEED4AF000A5FC6 /* VCityPicker.m */; };
-		F1489A8E1DE03829000AD269 /* BottleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1489A8C1DE03829000AD269 /* BottleView.m */; };
 		F154ECF51DF9370800EB4FAD /* VCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F154ECF21DF9370800EB4FAD /* VCityModel.m */; };
 		F154ECF81DF9383D00EB4FAD /* areas.json in Resources */ = {isa = PBXBuildFile; fileRef = F154ECF71DF9383D00EB4FAD /* areas.json */; };
 		F154ED051DF94B8F00EB4FAD /* VCityToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F154ED041DF94B8F00EB4FAD /* VCityToolBar.m */; };
@@ -35,13 +32,14 @@
 		F18690981DC877D10024BF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18690961DC877D10024BF3A /* Main.storyboard */; };
 		F186909A1DC877D10024BF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18690991DC877D10024BF3A /* Assets.xcassets */; };
 		F186909D1DC877D10024BF3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F186909B1DC877D10024BF3A /* LaunchScreen.storyboard */; };
+		F1B74DA11EFB62DA00995FB3 /* VVDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B74DA01EFB62DA00995FB3 /* VVDropMenu.m */; };
+		F1B74DA51EFB6FEA00995FB3 /* VVWarnPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B74DA41EFB6FEA00995FB3 /* VVWarnPopupView.m */; };
+		F1B74DAC1EFB906F00995FB3 /* TestPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B74DAA1EFB906F00995FB3 /* TestPopupView.m */; };
+		F1B74DAF1EFB909700995FB3 /* VVImagePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B74DAE1EFB909700995FB3 /* VVImagePopupView.m */; };
+		F1B74DB21EFCAFF000995FB3 /* VVRefreshPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B74DB11EFCAFF000995FB3 /* VVRefreshPopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F13ED4C71DDBF52000F8DFF3 /* TestPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPopupView.h; sourceTree = "<group>"; };
-		F13ED4C81DDBF52000F8DFF3 /* TestPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPopupView.m; sourceTree = "<group>"; };
-		F13ED4CB1DDBF67600F8DFF3 /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
-		F13ED4CC1DDBF67600F8DFF3 /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
 		F13ED4CE1DDBF67600F8DFF3 /* UIImage+ResizeMagick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeMagick.h"; sourceTree = "<group>"; };
 		F13ED4CF1DDBF67600F8DFF3 /* UIImage+ResizeMagick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeMagick.m"; sourceTree = "<group>"; };
 		F13ED4D41DDBF79C00F8DFF3 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -73,8 +71,6 @@
 		F13ED4F91DDBF96400F8DFF3 /* BasePopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePopupView.m; sourceTree = "<group>"; };
 		F14824421DEED4AF000A5FC6 /* VCityPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCityPicker.h; sourceTree = "<group>"; };
 		F14824431DEED4AF000A5FC6 /* VCityPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCityPicker.m; sourceTree = "<group>"; };
-		F1489A8C1DE03829000AD269 /* BottleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottleView.m; sourceTree = "<group>"; };
-		F1489A8D1DE03829000AD269 /* BottleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottleView.h; sourceTree = "<group>"; };
 		F154ECF11DF9370800EB4FAD /* VCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCityModel.h; sourceTree = "<group>"; };
 		F154ECF21DF9370800EB4FAD /* VCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCityModel.m; sourceTree = "<group>"; };
 		F154ECF71DF9383D00EB4FAD /* areas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = areas.json; sourceTree = "<group>"; };
@@ -96,6 +92,16 @@
 		F18690991DC877D10024BF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F186909C1DC877D10024BF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F186909E1DC877D10024BF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B74D9F1EFB62DA00995FB3 /* VVDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDropMenu.h; sourceTree = "<group>"; };
+		F1B74DA01EFB62DA00995FB3 /* VVDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDropMenu.m; sourceTree = "<group>"; };
+		F1B74DA31EFB6FEA00995FB3 /* VVWarnPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVWarnPopupView.h; sourceTree = "<group>"; };
+		F1B74DA41EFB6FEA00995FB3 /* VVWarnPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVWarnPopupView.m; sourceTree = "<group>"; };
+		F1B74DA91EFB906F00995FB3 /* TestPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPopupView.h; sourceTree = "<group>"; };
+		F1B74DAA1EFB906F00995FB3 /* TestPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPopupView.m; sourceTree = "<group>"; };
+		F1B74DAD1EFB909700995FB3 /* VVImagePopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVImagePopupView.h; sourceTree = "<group>"; };
+		F1B74DAE1EFB909700995FB3 /* VVImagePopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVImagePopupView.m; sourceTree = "<group>"; };
+		F1B74DB01EFCAFF000995FB3 /* VVRefreshPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVRefreshPopView.h; sourceTree = "<group>"; };
+		F1B74DB11EFCAFF000995FB3 /* VVRefreshPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVRefreshPopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,15 +115,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F13ED4CA1DDBF67600F8DFF3 /* PopAnimationView */ = {
-			isa = PBXGroup;
-			children = (
-				F13ED4CB1DDBF67600F8DFF3 /* PopView.h */,
-				F13ED4CC1DDBF67600F8DFF3 /* PopView.m */,
-			);
-			path = PopAnimationView;
-			sourceTree = "<group>";
-		};
 		F13ED4CD1DDBF67600F8DFF3 /* UIImage-ResizeMagick */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,15 +192,6 @@
 			path = CityPicker;
 			sourceTree = "<group>";
 		};
-		F1489A8B1DE03823000AD269 /* BottleView */ = {
-			isa = PBXGroup;
-			children = (
-				F1489A8C1DE03829000AD269 /* BottleView.m */,
-				F1489A8D1DE03829000AD269 /* BottleView.h */,
-			);
-			path = BottleView;
-			sourceTree = "<group>";
-		};
 		F18690811DC877D10024BF3A = {
 			isa = PBXGroup;
 			children = (
@@ -223,17 +211,16 @@
 		F186908C1DC877D10024BF3A /* PopupViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				F1B74DA61EFB906F00995FB3 /* PopupViews */,
+				F1B74DA21EFB6FC800995FB3 /* WarnPopupView */,
+				F1B74D9E1EFB62B600995FB3 /* TopMenu */,
 				F18690901DC877D10024BF3A /* AppDelegate.h */,
 				F18690911DC877D10024BF3A /* AppDelegate.m */,
 				F18690931DC877D10024BF3A /* ViewController.h */,
 				F18690941DC877D10024BF3A /* ViewController.m */,
-				F13ED4C71DDBF52000F8DFF3 /* TestPopupView.h */,
-				F13ED4C81DDBF52000F8DFF3 /* TestPopupView.m */,
 				F18690961DC877D10024BF3A /* Main.storyboard */,
 				F14824411DEED49B000A5FC6 /* CityPicker */,
-				F1489A8B1DE03823000AD269 /* BottleView */,
 				F13ED4F71DDBF96400F8DFF3 /* BasePopupView */,
-				F13ED4CA1DDBF67600F8DFF3 /* PopAnimationView */,
 				F13ED4CD1DDBF67600F8DFF3 /* UIImage-ResizeMagick */,
 				F13ED4D21DDBF79C00F8DFF3 /* 3rds */,
 				F18690991DC877D10024BF3A /* Assets.xcassets */,
@@ -251,6 +238,37 @@
 				F154ECF91DF93DC800EB4FAD /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1B74D9E1EFB62B600995FB3 /* TopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F1B74D9F1EFB62DA00995FB3 /* VVDropMenu.h */,
+				F1B74DA01EFB62DA00995FB3 /* VVDropMenu.m */,
+			);
+			path = TopMenu;
+			sourceTree = "<group>";
+		};
+		F1B74DA21EFB6FC800995FB3 /* WarnPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				F1B74DA31EFB6FEA00995FB3 /* VVWarnPopupView.h */,
+				F1B74DA41EFB6FEA00995FB3 /* VVWarnPopupView.m */,
+			);
+			path = WarnPopupView;
+			sourceTree = "<group>";
+		};
+		F1B74DA61EFB906F00995FB3 /* PopupViews */ = {
+			isa = PBXGroup;
+			children = (
+				F1B74DA91EFB906F00995FB3 /* TestPopupView.h */,
+				F1B74DAA1EFB906F00995FB3 /* TestPopupView.m */,
+				F1B74DAD1EFB909700995FB3 /* VVImagePopupView.h */,
+				F1B74DAE1EFB909700995FB3 /* VVImagePopupView.m */,
+				F1B74DB01EFCAFF000995FB3 /* VVRefreshPopView.h */,
+				F1B74DB11EFCAFF000995FB3 /* VVRefreshPopView.m */,
+			);
+			path = PopupViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +297,7 @@
 		F18690821DC877D10024BF3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = vols;
 				TargetAttributes = {
 					F18690891DC877D10024BF3A = {
@@ -327,26 +345,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				F13ED4F31DDBF79C00F8DFF3 /* NSArray+MASAdditions.m in Sources */,
+				F1B74DAC1EFB906F00995FB3 /* TestPopupView.m in Sources */,
 				F154ED051DF94B8F00EB4FAD /* VCityToolBar.m in Sources */,
 				F14824441DEED4AF000A5FC6 /* VCityPicker.m in Sources */,
+				F1B74DAF1EFB909700995FB3 /* VVImagePopupView.m in Sources */,
 				F154ED0D1DF94F5B00EB4FAD /* VProvinceModel.m in Sources */,
 				F13ED4F21DDBF79C00F8DFF3 /* MASViewConstraint.m in Sources */,
 				F154ECF51DF9370800EB4FAD /* VCityModel.m in Sources */,
+				F1B74DB21EFCAFF000995FB3 /* VVRefreshPopView.m in Sources */,
 				F13ED4EF1DDBF79C00F8DFF3 /* MASConstraintMaker.m in Sources */,
+				F1B74DA51EFB6FEA00995FB3 /* VVWarnPopupView.m in Sources */,
 				F13ED4F51DDBF79C00F8DFF3 /* View+MASAdditions.m in Sources */,
 				F18690951DC877D10024BF3A /* ViewController.m in Sources */,
 				F13ED4EE1DDBF79C00F8DFF3 /* MASConstraint.m in Sources */,
-				F1489A8E1DE03829000AD269 /* BottleView.m in Sources */,
 				F18690921DC877D10024BF3A /* AppDelegate.m in Sources */,
 				F13ED4F11DDBF79C00F8DFF3 /* MASViewAttribute.m in Sources */,
+				F1B74DA11EFB62DA00995FB3 /* VVDropMenu.m in Sources */,
 				F154ED081DF94BFE00EB4FAD /* V2CityPicker.m in Sources */,
 				F13ED4FA1DDBF96400F8DFF3 /* BasePopupView.m in Sources */,
 				F13ED4F41DDBF79C00F8DFF3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				F13ED4C91DDBF52000F8DFF3 /* TestPopupView.m in Sources */,
 				F13ED4ED1DDBF79C00F8DFF3 /* MASCompositeConstraint.m in Sources */,
 				F13ED4F01DDBF79C00F8DFF3 /* MASLayoutConstraint.m in Sources */,
 				F13ED4D11DDBF67600F8DFF3 /* UIImage+ResizeMagick.m in Sources */,
-				F13ED4D01DDBF67600F8DFF3 /* PopView.m in Sources */,
 				F13ED4F61DDBF79C00F8DFF3 /* ViewController+MASAdditions.m in Sources */,
 				F186908F1DC877D10024BF3A /* main.m in Sources */,
 			);
@@ -392,6 +412,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -439,6 +460,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
